@@ -4,6 +4,7 @@ import Image from "next/image";
 
 export default async function UserInfo() {
   const session = await auth();
+  
   return (
     <div>
       {" "}
@@ -19,7 +20,7 @@ export default async function UserInfo() {
           style={{ borderRadius: "50%" }}
         />
       )}
-       <Link href="/" > Go back </Link>
+      <Link href="/" > Go back </Link>
     </div>
   );
 }
